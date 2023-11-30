@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      .mt {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .mr,
+      .md {
+        border: 1px solid black;
+        padding: 8px;
+        width: 350px;
+        text-align: left;
+      }
+      input {
+        width: 300px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body style="margin-bottom: 200px">
+    <header>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="/pics/forest.jp"
+              alt=""
+              style="
+                border: 1px solid;
+                width: 100px;
+                height: 100px;
+                margin-left: 120px;
+              "
+            />
+          </td>
+          <td>
+            <p style="margin-left: 300px; font-weight: bold">
+              Hello World <br />
+              Try me Hanz
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="margin-left: 50px; width: 300px; margin-top: 2px">
+              <strong
+                >OFFICE OF THE REGISTRAR OF
+                <span style="margin-left: 62px">COMPANIES</span></strong
+              >
+            </p>
+          </td>
+          <td>
+            FILL ALL THE FORMS IN BLOCK LETTERS, AND LEAVE SPACE IN BETWEEN
+            WORDS <br />
+            <span style="margin-left: 130px">PLEASE WRITE ALL WORDS </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            fee is payable on presentation of this form. Please see the fees in
+            our website
+            <a href="https://www.ghana.gov.gh/">ww.rdg.gov.gh</a> <br />
+            read the instructions before completinf the form. Income
+            applications or valid data may delay the registration
+          </td>
+        </tr>
+      </table>
+    </header>
+    <main style="text-align: center">
+      <h4>ADDITIONAL FORMS FOR SUSCRIBER-INDIVIDUAL</h4>
+      <form action="/data" method="POST">
+        <table class="mt">
+          <tr class="mr">
+            <td class="md"><i>Company Name*</i></td>
+            <td colspan="2">
+              <input type="text" name="companyName" id="companyName" />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="text-align: left">
+              We the undersigned are desirous of forming an incorporated Company
+              in persuanceof this Constitution and we <br />
+              spectively agree to take the number of shares in this Company
+              setopposite our respective names and to pay <br />therefore in
+              cash the consideration respectivly stated
+            </td>
+            <td
+              class="md"
+              rowspan="16"
+              style="width: 300px; padding-top: 140px"
+            >
+              A subscriber is somebody who agrees to <br />
+              become a member of the <br />company by the taking up shares
+              <br />at the inception of the company <br />The application for
+              incorporation<br />
+              hall be made by a person: <br />a. Signing a duly completed
+              <br />application for incorporation form <br />or <br />b. signing
+              a duly completed <br />
+              application for incorporation form <br />and the constitution of
+              the <br />
+              proposed company (where a <br />registered constitution is <br />
+              preferred) <br />
+              If there are more than two <br />
+              subscribers, Additional <br />
+              Subscriber Form - Individuals <br />
+              shall be obtained from our <br />
+              <a href="https://www.ghana.gov.gh/">ww.rdg.gov.gh</a>
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td colspan="2" style="text-align: center; padding: 8px">
+              <b>Address and Description of Suscriber-Individual</b>
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><b>Suscriber</b></td>
+            <td>
+              <select
+                name="Suscriber"
+                id="Suscriber"
+                style="margin-left: 10px; width: 300px"
+              >
+                <option value="Hanz">Hanz</option>
+                <option value="Bance">Bance</option>
+                <option value="Rhoda">Rhoda</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>First Name*</i></td>
+            <td><input type="text" name="firstName" id="firstName" /></td>
+          </tr>
+
+          <tr></tr>
+          <tr class="mr">
+            <td class="md"><i>Last Name*</i></td>
+            <td><input type="text" name="lastName" id="lastName" /></td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Gender*</i></td>
+            <td>
+              <select
+                name="Gender"
+                id="Gender"
+                style="margin-left: 10px; width: 300px"
+              >
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="NON-BINARY">Non-Binary</option>
+                <option value="Other">Other</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Date of Birth*</i></td>
+            <td>
+              <input type="date" name="dateOfBirth" id="dateOfBirthdate" />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Place of Birth*</i></td>
+            <td style="width: 1500px">
+              <input
+                type="text"
+                name="placeOfBirth"
+                id="dateOfBirth"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Nationality*</i></td>
+            <td>
+              <input type="text" name="Nationality" id="Nationality" required />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Occupation*</i></td>
+            <td>
+              <input type="text" name="Occupation" id="Occupation" required />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Digital Address*</i></td>
+            <td>
+              <input
+                type="text"
+                name="digitaladdress"
+                id="digitaladdress"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Address*</i></td>
+            <td>
+              <input type="address" name="address" id="address" required />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>TIN*</i></td>
+            <td><input type="text" name="tin" id="tin" required /></td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Without TIN*</i></td>
+            <td style="text-align: center">
+              <b>Fill the GRA TIN form attached</b>
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Signature*</i></td>
+            <td>
+              <input type="text" name="signature" id="signature" required />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td colspan="2" style="text-align: center; padding: 8px">
+              <b>Beneficial Owner(BO)</b>
+            </td>
+            <td class="md"></td>
+          </tr>
+
+          <tr class="mr">
+            <td colspan="2" style="width: 600px; padding: 8px">
+              benefecial owner (or owners) is the individual or natural person
+              who owns, controls, has intrest in, or exercises influence over
+              the legal person (or arrangement) or recieves substaintial benefit
+              <br />
+              from the applicant's activity. A beneficial owner is an individual
+              and cannot be a company.
+            </td>
+            <td rowspan="3" class="md"></td>
+          </tr>
+
+          <tr>
+            <td class="md" colspan="2" style="text-align: left; padding: 8px">
+              <b>SANCTIONS:</b>Failure to disclose is an offence and will
+              attract sanctions and penalties
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="text-align: left; padding: 8px">
+              <b>Fill the BO Form attached/Downloas from website</b>
+              <a href="https://www.ghana.gov.gh/">ww.rdg.gov.gh</a>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <input type="submit" name="submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>
