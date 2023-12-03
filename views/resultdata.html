@@ -1,261 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results table</title>
-    <style>
-        body{
-            font-family: Arial, Sans serif;
-            margin: 30px 60px 60px 60px;
-        }
-        div{
-            max-height: 700px;
-            overflow: auto;
-           
-        }
-        table{
-            width: 1450px;
-            border: 2px solid  #E0E0E0 ;
-            border-collapse: collapse;
-           
-            
-            
-        
-        } 
-        th,tr,td{
-            text-align: center;
-            border-bottom: 1px solid  #E0E0E0 ;
-            padding: 7px 10px;
-        }
-        table tr:nth-child(even) {
-        background-color: #E0E0E0;
-      }
-      table tr:nth-child(odd):not(:first-child){
-        height: 90px;
-      }
-    </style>
-</head>
-<body>
-    <h2 style="text-align: center; text-decoration: underline; margin-bottom: 55px;">Data Table</h2>
-    <div>
-        <table>
-            <th>Personal ID</th>
-            <th>Company Name</th>
-            <th>Suscriber</th>
-            <th>First name</th>
-            <th>Middle Name</th>
-            <th>Last Name</th>
-            <th>Gender</th>
-            <th>Date of Birth</th>
-            <th>Place of Birth</th>
-            <th>Nationality</th>
-            <th>Occupation</th>
-            <th>Digital Address</th>
-            <th>Tin</th>
-            <th>Signature</th>
-    
-            <tr>
-                <td>1</td>
-                <td>Alphabet Inc.</td>
-                <td>Hanzk.S</td>
-                <td>Hanz</td>
-                <td>Ofosuhene</td>
-                <td>Sintim</td>
-                <td>MALE</td>
-                <td>30-06-2004</td>
-                <td>USA</td>
-                <td>English</td>
-                <td>Student</td>
-                <td>GHA-3222323-2423</td>
-                <td>32313</td>
-                <td>hanzsintim</td>
-            </tr>
-    
-            
-            <tr>
-                <td>2</td>
-                <td>Spagard Tech</td>
-                <td>PK</td>
-                <td>Papa Kofi</td>
-                <td>Adom</td>
-                <td>Wiredu</td>
-                <td>MALE</td>
-                <td>06-01-2006</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-32534424-2434</td>
-                <td>32313</td>
-                <td>Pkay</td>
-            </tr>
-    
-            <tr>
-                <td>3</td>
-                <td>Microsoft Inc.</td>
-                <td>Joey</td>
-                <td>Joel</td>
-                <td>Yeyra</td>
-                <td>Clemson</td>
-                <td>MALE</td>
-                <td>31-12-2004</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-3253224-2325</td>
-                <td>32313</td>
-                <td>Joyzee</td>
-            </tr>
-
-            
-            <tr>
-                <td>4</td>
-                <td>Samsung Electronics</td>
-                <td>BaNir</td>
-                <td>Bayaan</td>
-                <td>Kooli</td>
-                <td>Nasir</td>
-                <td>MALE</td>
-                <td>20-03-2005</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-3256724-2325</td>
-                <td>323513</td>
-                <td>Bazir</td>
-            </tr>
-            
-            
-            <tr>
-                <td>5</td>
-                <td>Caterpillar</td>
-                <td>Dani </td>
-                <td>Daniel</td>
-                <td>Obeng</td>
-                <td>Agyei</td>
-                <td>MALE</td>
-                <td>15-03-2004</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-3253224-2325</td>
-                <td>32313</td>
-                <td>DOA</td>
-            </tr>
-            
-            
-            <tr>
-                <td>6</td>
-                <td>Pfizer Inc</td>
-                <td>Sesi</td>
-                <td>Grahan</td>
-                <td>Sesi</td>
-                <td>Gidisu</td>
-                <td>MALE</td>
-                <td>14-12-2004</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-32453224-2325</td>
-                <td>323242</td>
-                <td>Nukpezah</td>
-            </tr>
-            
-            
-            <tr>
-                <td>7</td>
-                <td> Centre hospitalier de l'Université de Montréal</td>
-                <td>BenIke</td>
-                <td>Benzies</td>
-                <td>Adu</td>
-                <td>Okore Marfo</td>
-                <td>MALE</td>
-                <td>09-03-2004</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-32987224-2325</td>
-                <td>32313</td>
-                <td>Benziesmarfo</td>
-            </tr>
-            
-            
-            <tr>
-                <td>8</td>
-                <td>svffae</td>
-                <td>Joey</td>
-                <td>Joel</td>
-                <td>Yeyra</td>
-                <td>Clemson</td>
-                <td>MALE</td>
-                <td>31-12-2004</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-3253224-2325</td>
-                <td>32313</td>
-                <td>Joyzee</td>
-            </tr>
-            
-            
-            <tr>
-                <td>9</td>
-                <td>Microsoft Inc.</td>
-                <td>Joey</td>
-                <td>Joel</td>
-                <td>Yeyra</td>
-                <td>Clemson</td>
-                <td>MALE</td>
-                <td>31-12-2004</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-3253224-2325</td>
-                <td>32313</td>
-                <td>Joyzee</td>
-            </tr>
-            
-            
-            <tr>
-                <td>10</td>
-                <td>Microsoft Inc.</td>
-                <td>Joey</td>
-                <td>Joel</td>
-                <td>Yeyra</td>
-                <td>Clemson</td>
-                <td>MALE</td>
-                <td>31-12-2004</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-3253224-2325</td>
-                <td>32313</td>
-                <td>Joyzee</td>
-            </tr>
-            
-            
-            <tr>
-                <td>11</td>
-                <td>Microsoft Inc.</td>
-                <td>Joey</td>
-                <td>Joel</td>
-                <td>Yeyra</td>
-                <td>Clemson</td>
-                <td>MALE</td>
-                <td>31-12-2004</td>
-                <td>Ghana</td>
-                <td>Ghanian</td>
-                <td>Student</td>
-                <td>GHA-3253224-2325</td>
-                <td>32313</td>
-                <td>Joyzee</td>
-            </tr>
-            
-            
-            
-        </table>
-        
-    </div>
-   
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Results table</title>
+        <style>
+            body {
+                font-family: Arial, Sans serif;
+                margin: 30px 60px 60px 60px;
+            }
+            div {
+                max-height: 700px;
+                overflow: auto;
+            }
+            table {
+                width: 1450px;
+                border: 2px solid #e0e0e0;
+                border-collapse: collapse;
+            }
+            th,
+            tbody,
+            tr,
+            td {
+                text-align: center;
+                border-bottom: 1px solid #e0e0e0;
+                padding: 7px 10px;
+            }
+            table tbody:nth-child(even) {
+                background-color: #e0e0e0;
+            }
+            table tbody:nth-child(odd):not(:first-child) {
+                height: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2
+            style="
+                text-align: center;
+                text-decoration: underline;
+                margin-bottom: 55px;
+            "
+        >
+            Data Table
+        </h2>
+        <div>
+            <table id="data-table">
+                <thead>
+                    <th>Personal ID</th>
+                    <th>Company Name</th>
+                    <th>Subscriber</th>
+                    <th>First name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Date of Birth</th>
+                    <th>Place of Birth</th>
+                    <th>Nationality</th>
+                    <th>Occupation</th>
+                    <th>Digital Address</th>
+                    <th>Address</th>
+                    <th>Tin</th>
+                    <th>Signature</th>
+                </thead>
+            </table>
+            <a href="/">Add Data</a>
+        </div>
+        <script src="../static/script.js"></script>
+    </body>
 </html>
