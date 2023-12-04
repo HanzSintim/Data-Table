@@ -6,6 +6,7 @@ request.onload = function () {
 
 	const table = document.getElementById("data-table")
 	data.forEach((row, index) => {
+		console.log(row)
 		table.innerHTML += `
 			<tr>
 				<td>${index + 1}</td>
@@ -14,14 +15,23 @@ request.onload = function () {
 				<td>${row.firstName}</td>
 				<td>${row.lastName}</td>
 				<td>${row.gender}</td>
+				<td>${row.levelOfEducation}</td>
+				<td>${row.contactDetails}</td>
 				<td>${row.dateOfBirth}</td>
 				<td>${row.placeOfBirth}</td>
 				<td>${row.nationality}</td>
 				<td>${row.occupation}</td>
+				<td>${row.parentOccupation}</td>
+				<td>${row.parentContact}</td>
+				<td>${row.residentialAddress}</td>
 				<td>${row.digitaladdress}</td>
 				<td>${row.addr}</td>
 				<td>${row.tin}</td>
-				<td>${row.sign}</td>
+				<td>${row.email}</td>
+				<td>
+					<button onclick="edit(${row.id})">Edit</button>
+					<button onclick="delete(${row.id})">Delete</button>
+				</td>
 			</tr>
 		`
 	})

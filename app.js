@@ -45,53 +45,69 @@ app.post("/data", (req, res) => {
 		firstName,
 		lastName,
 		Gender,
+		levelOfEducation,
+		contactDetails,
 		dateOfBirth,
 		placeOfBirth,
 		Nationality,
 		Occupation,
+		parentOccupation,
+		parentContact,
+		residentialAddress,
 		digitaladdress,
 		address,
 		tin,
-		signature,
+		email,
 	} = req.body;
 	console.log(req.body)
 	db.run(`CREATE TABLE IF NOT EXISTS data (
+		id INTEGER PRIMARY KEY,
 		companyName VARCHAR(100),
 		subscriber VARCHAR(50),
 		firstName VARCHAR(50),
 		lastName VARCHAR(50),
 		gender VARCHAR(10),
+		levelOfEducaton VARCHAR(100),
+		contactDetails VARCHAR(50)
 		dateOfBirth DATE,
 		placeOfBirth VARCHAR(100),
 		nationality VARCHAR(100),
 		occupation VARCHAR(100),
-		digitaladdress VARCHAR(100),
-		addr VARCHAR(100),
+		parentOccupation VARCHAR(50),
+		parentContact  VARCHAR(50),
+		residentialAddress VARCHAR(50),
+		digitalAddress VARCHAR(100),
+		address VARCHAR(100),
 		tin VARCHAR(100),
-		sign VARCHAR(100)
+		email VARCHAR(50)
 	);
 	`)
 
-	db.run("INSERT INTO data VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", [
+	db.run("INSERT INTO data VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,)", [
 		companyName,
 		Subscriber,
 		firstName,
 		lastName,
 		Gender,
+		levelOfEducation,
+		contactDetails,
 		dateOfBirth,
 		placeOfBirth,
 		Nationality,
 		Occupation,
+		parentOccupation,
+		parentContact,
+		residentialAddress,
 		digitaladdress,
 		address,
 		tin,
-		signature
+		email
 	], ((err) => {
 		if (err) console.log(err.message)
 	}))
 	res.redirect('/')
 })
 
-app.listen(6000, () => {
-	console.log("server started")
+app.listen(5000, () => {
+	console.log("server started on http://localhost:5000")
 })

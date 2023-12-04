@@ -13,7 +13,6 @@
       .md {
         border: 1px solid black;
         padding: 8px;
-        width: 350px;
         text-align: left;
       }
       input {
@@ -23,7 +22,7 @@
     </style>
   </head>
   <body style="margin-bottom: 200px">
-    <header>
+    <!-- <header>
       <table>
         <tr>
           <td>
@@ -70,58 +69,28 @@
           </td>
         </tr>
       </table>
-    </header>
+    </header> -->
     <main style="text-align: center">
-      <h4>ADDITIONAL FORMS FOR SUSCRIBER-INDIVIDUAL</h4>
+      <h4>REGISTRATION FORMS FOR STUDENT-INDIVIDUAL</h4>
       <form action="/data" method="POST">
-        <table class="mt">
+        <table style="align-content: center" class="mt">
           <tr class="mr">
-            <td class="md"><i>Company Name*</i></td>
+            <!-- From Company Name to Schhol Name -->
+            <td class="md"><i>School Name*</i></td>
             <td colspan="2">
               <input type="text" name="companyName" id="companyName" />
             </td>
           </tr>
 
-          <tr>
-            <td colspan="2" style="text-align: left">
-              We the undersigned are desirous of forming an incorporated Company
-              in persuanceof this Constitution and we <br />
-              spectively agree to take the number of shares in this Company
-              setopposite our respective names and to pay <br />therefore in
-              cash the consideration respectivly stated
-            </td>
-            <td
-              class="md"
-              rowspan="16"
-              style="width: 300px; padding-top: 140px"
-            >
-              A subscriber is somebody who agrees to <br />
-              become a member of the <br />company by the taking up shares
-              <br />at the inception of the company <br />The application for
-              incorporation<br />
-              hall be made by a person: <br />a. Signing a duly completed
-              <br />application for incorporation form <br />or <br />b. signing
-              a duly completed <br />
-              application for incorporation form <br />and the constitution of
-              the <br />
-              proposed company (where a <br />registered constitution is <br />
-              preferred) <br />
-              If there are more than two <br />
-              subscribers, Additional <br />
-              Subscriber Form - Individuals <br />
-              shall be obtained from our <br />
-              <a href="https://www.ghana.gov.gh/">ww.rdg.gov.gh</a>
-            </td>
-          </tr>
-
-          <tr class="mr">
+          <!-- <tr class="mr">
             <td colspan="2" style="text-align: center; padding: 8px">
               <b>Address and Description of Suscriber-Individual</b>
             </td>
-          </tr>
+          </tr> -->
 
           <tr class="mr">
-            <td class="md"><b>Suscriber</b></td>
+            <!-- From Subcriber to Student Name -->
+            <td class="md"><b>Student Name</b></td>
             <td>
               <select
                 name="Subscriber"
@@ -140,10 +109,8 @@
             <td><input type="text" name="firstName" id="firstName" /></td>
           </tr>
 
-          <tr>
+          <tr></tr>
 
-          </tr>
-          
           <tr class="mr">
             <td class="md"><i>Last Name*</i></td>
             <td><input type="text" name="lastName" id="lastName" /></td>
@@ -166,6 +133,26 @@
           </tr>
 
           <tr class="mr">
+            <td class="md"><i>Level of Educaton*</i></td>
+            <td>
+              <select name="levelOfEducation" id="levelOfEducation" style="margin-left: 10px; width: 300px"
+              >
+                <option value="High-School">High-School</option>
+                <option value="Tertiary">Tertiary</option>
+                <option value="Other">Other</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Contact Details* </i></td>
+            <td>
+              <input type="text" name="contactDetails" id="contactDetails" />
+            </td>
+          </tr>
+
+
+          <tr class="mr">
             <td class="md"><i>Date of Birth*</i></td>
             <td>
               <input type="date" name="dateOfBirth" id="dateOfBirthdate" />
@@ -174,13 +161,8 @@
 
           <tr class="mr">
             <td class="md"><i>Place of Birth*</i></td>
-            <td style="width: 1500px">
-              <input
-                type="text"
-                name="placeOfBirth"
-                id="dateOfBirth"
-                required
-              />
+            <td >
+              <input type="text" name="placeOfBirth" id="dateOfBirth" required />
             </td>
           </tr>
 
@@ -193,20 +175,37 @@
 
           <tr class="mr">
             <td class="md"><i>Occupation*</i></td>
+            
             <td>
-              <input type="text" name="Occupation" id="Occupation" required />
+              <input type="text" name="occupation" id="occupation" required />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Parent Occupation*</i></td>
+            <td>
+              <input type="text" name="parentOccupation" id="parentOccupation" required />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Parent Contact*</i></td>
+            <td>
+              <input type="text" name="parentContact" id="parentContact" />
+            </td>
+          </tr>
+
+          <tr class="mr">
+            <td class="md"><i>Residential Address*</i></td>
+            <td>
+              <input type="text" name="residentialAddress" id="residentialAddress" />
             </td>
           </tr>
 
           <tr class="mr">
             <td class="md"><i>Digital Address*</i></td>
             <td>
-              <input
-                type="text"
-                name="digitaladdress"
-                id="digitaladdress"
-                required
-              />
+              <input type="text" name="digitaladdress" id="digitaladdress"required/>
             </td>
           </tr>
 
@@ -218,29 +217,30 @@
           </tr>
 
           <tr class="mr">
-            <td class="md"><i>TIN*</i></td>
+            <!-- From TIN TO Name of Former School -->
+            <td class="md"><i>Name of former school*</i></td>
             <td><input type="text" name="tin" id="tin" required /></td>
           </tr>
 
-          <tr class="mr">
-            <td class="md"><i>Without TIN*</i></td>
+          <!-- <tr class="mr">
+            From Without TIN TO Name of Former Class 
+            <td class="md"><i>Name of former class*</i></td>
             <td style="text-align: center">
               <b>Fill the GRA TIN form attached</b>
             </td>
-          </tr>
+          </tr> -->
 
           <tr class="mr">
-            <td class="md"><i>Signature*</i></td>
+            <td class="md"><i>Email*</i></td>
             <td>
-              <input type="text" name="signature" id="signature" required />
+              <input type="text" name="email" id="email" required />
             </td>
           </tr>
 
-          <tr class="mr">
-            <td colspan="2" style="text-align: center; padding: 8px">
+          <!-- <tr class="mr">
+            <td colspan="3" style="text-align: center; padding: 8px">
               <b>Beneficial Owner(BO)</b>
-            </td>
-            <td class="md"></td>
+            </td>   
           </tr>
 
           <tr class="mr">
@@ -266,7 +266,7 @@
             <td colspan="2" style="text-align: left; padding: 8px">
               <b>Fill the BO Form attached/Downloas from website</b>
               <a href="https://www.ghana.gov.gh/">ww.rdg.gov.gh</a>
-            </td>
+            </td> -->
           </tr>
         </table>
         <br />
