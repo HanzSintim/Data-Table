@@ -69,7 +69,7 @@ app.post("/data", (req, res) => {
 		gender VARCHAR(10),
 		levelOfEducaton VARCHAR(100),
 		contactDetails VARCHAR(50)
-		dateOfBirth DATE,
+		dateOfBirth VARCHAR(50),
 		placeOfBirth VARCHAR(100),
 		nationality VARCHAR(100),
 		occupation VARCHAR(100),
